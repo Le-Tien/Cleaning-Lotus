@@ -1,0 +1,35 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "This is landing lesson",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.1",
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "browser-sync": "^2.24.5",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "rimraf": "^2.6.2",
+    "sourcemap": "^0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le-Tien/Cleaning-Lotus.git"
+  },
+  "author": "Le-Tien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Le-Tien/Cleaning-Lotus/issues"
+  },
+  "homepage": "https://github.com/Le-Tien/Cleaning-Lotus#readme"
+}
