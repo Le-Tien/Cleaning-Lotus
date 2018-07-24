@@ -3,6 +3,7 @@ node_modules
 npm-debug.log
 .DS_Store
 build
+package-lock.json
 # Created by .ignore support plugin (hsz.mobi)
 ### Windows template
 # Windows thumbnail cache files

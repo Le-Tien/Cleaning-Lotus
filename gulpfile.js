@@ -30,7 +30,7 @@ gulp.task('templates:compile', function buildHTML() {
 });
 
 /*-------Style compile------*/
-gulp.task('sass', function () {
+gulp.task('styles:complete', function () {
     return gulp.src('source/styles/main.scss')
         .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
         .pipe(rename('main.min.css'))
@@ -40,7 +40,7 @@ gulp.task('sass', function () {
 
 /*------Sprites------------*/
 gulp.task('sprite', function (cb) {
-    const spriteData = gulp.src('source/image/icons/*.png').pipe(spritesmith({
+    const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
         imgPath:'../images/sprite.png',
         cssName: 'sprite.scss'
@@ -72,11 +72,11 @@ gulp.task('copy',gulp.parallel('copy:fonts','copy:images'));
 /*------Watchers------*/
 gulp.task('watch',function () {
     gulp.watch('source/templates/**/*.pug', gulp.series('templates:compile'));
-    gulp.watch('source/styles/**/*.scss', gulp.series('sass'));
+    gulp.watch('source/styles/**/*.scss', gulp.series('styles:complete'));
 });
 
 gulp.task('default',gulp.series('clean',
-    gulp.parallel('templates:compile','sass','sprite','copy'),
+    gulp.parallel('templates:compile','styles:complete','sprite','copy'),
     gulp.parallel('watch','server')
 )
 );
