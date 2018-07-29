@@ -1,7 +1,7 @@
-nav.nav__main
+nav.nav
   -var items =['Главная','О компании','Наши услуги','Прайс-лист']
   each item in items
-    if item==='Главная'
-      a.nav__main__link.nav__main__link--active(href='#')=item
+    if item === 'Главная'
+      a.nav__link.nav__link--active(href='#')= item
     else
-      a.nav__main__link(href='#')=item
+      a.nav__link(href='#')=item

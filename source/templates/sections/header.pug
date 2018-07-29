@@ -1,8 +1,20 @@
 header.header
-  .container
-    .logo: img.logo__picture(src="images/icons/logo.png")
-    .nav
-      h1.nav__text Гарантия качества и индивидуальный подход к каждому клиенту
-      include nav
+  .header__flex
+    .logo: img.logo__picture(src="images/icons/logo.png" alt="Компания Лотос")
+    span.header__flex__text Гарантия качества и индивидуальный подход к каждому клиенту
     include contact
+  hr
+  .menu
+    a.btn(href="#")
+      i.fas.fa-bars.fa-2x(aria-hidden="true")
 
+    include nav
+    .icons
+      a.vk-icon(href="https://vk.com/club168294310" target="_bank")
+        i.fab.fa-vk.fa-2x(aria-hidden="true")
+      a.viber-icon(href="#" target="_bank")
+        i.fab.fa-viber.fa-2x(aria-hidden="true")
+      a.facebook-icon(href="#" target="_bank")
+        i.fab.fa-facebook.fa-2x(aria-hidden="true")
+
+  hr

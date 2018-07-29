@@ -1,0 +1,22 @@
+.nav{
+  margin: 0 auto;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+
+
+  &__link{
+    padding: 0 30px;
+    font-family: $ff-main2;
+    font-size: 1.5rem;
+    color: #888888;
+    text-decoration: none;
+
+  }
+
+    &:hover,
+    &--active{
+      color: #BC8F8F;
+    }
+}
