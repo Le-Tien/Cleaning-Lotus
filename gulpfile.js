@@ -43,6 +43,10 @@ gulp.task('styles:complete', function () {
  /*-----------js---------------*/
  gulp.task('js', function () {
      return gulp.src([
+             'bower_components/jquery/dist/jquery.min.js',
+             'bower_components/fotorama/fotorama.js',
+             'bower_components/iCheck/icheck.min.js',
+             'bower_components/social-likes/dist/social-likes.min.js',
              'source/js/form.js',
              'source/js/navigation.js',
              'source/js/main.js'
