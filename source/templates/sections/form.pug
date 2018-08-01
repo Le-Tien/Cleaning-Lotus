@@ -1,0 +1,28 @@
+form.formOut(method="post", action="form.php")
+  span.fOut Оставьте заявку
+  p.fOut Наш менеджер свяжется с вами
+  input.name(
+    type="text",
+    placeholder="Имя"
+    required=true
+    )
+  input.phone(
+    type="text",
+    placeholder="Номер телефона"
+    required=true
+    )
+  textarea.dsc(
+    placeholder="Объект уборки / чистки, метраж, комментарий"
+    required=true
+  )
+  .check
+    input#checkIt(type="checkbox")
+    p.federal.
+      Нажимая на кнопку “Отправить” я даю свое согласие Оператору на обработку моих персональных данных,
+      в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ “О персональных данных”, на условиях
+      и для целей, определенных Политикой обработки персональных данных.
+  input#checkBtn(
+    type="submit",
+    value="Отправить"
+    disabled="disabled"
+    )

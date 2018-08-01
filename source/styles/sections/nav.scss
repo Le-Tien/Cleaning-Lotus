@@ -6,17 +6,16 @@
   align-items: center;
 
 
-  &__link{
+  &__link {
     padding: 0 30px;
     font-family: $ff-main;
     font-size: 1.5rem;
     color: #888888;
     text-decoration: none;
 
-  }
-
     &:hover,
-    &--active{
-      color: #BC8F8F;
+    &--active {
+      color: darken(#888888,80%);
     }
+  }
 }

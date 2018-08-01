@@ -1,20 +1,37 @@
-.contacts{
-  //margin: 0;
+.contacts {
+  padding: 0 10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
-  hr{
+  width:200px;
+  text-align: center;
+
+  hr {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
 
   .contact{
+    display: block;
     font-family: $ff-main;
     color: #888888;
     text-decoration: none;
     padding: 10px 0;
+    font-size: 1.1rem;
+    transition: 0.3s;
   }
+}
+.contact__icon{
+  margin-right: 20px;
+
+  &__email{
+    margin-right: 5px;
+  }
+}
+a.contact:hover{
+  color:darken(#888888, 80%)
 }

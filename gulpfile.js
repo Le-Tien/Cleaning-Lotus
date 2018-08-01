@@ -47,8 +47,8 @@ gulp.task('styles:complete', function () {
              'bower_components/fotorama/fotorama.js',
              'bower_components/iCheck/icheck.min.js',
              'bower_components/social-likes/dist/social-likes.min.js',
+             'source/js/aside_menu.js',
              'source/js/form.js',
-             'source/js/navigation.js',
              'source/js/main.js'
      ])
      .pipe(sourcemaps.init())

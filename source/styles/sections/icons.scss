@@ -1,0 +1,13 @@
+.icons{
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.3s;
+  a{
+    color: #888888;
+    padding: 0 10px;
+  }
+  a:hover{
+    color:darken(#888888, 80%);
+  }
+
+}
