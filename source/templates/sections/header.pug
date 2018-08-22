@@ -1,13 +1,12 @@
-header.header
+header.header#runMain
   .header__flex
     .logo: img.logo__picture(src="images/icons/logo.png" alt="Компания Лотос")
     span.header__flex__text Гарантия качества и индивидуальный подход к каждому клиенту
     include contact
   hr
+  a.btn(href="#")
+    i.fas.fa-bars.fa-2x(aria-hidden="true")
   .menu
-    a.btn(href="#")
-      i.fas.fa-bars.fa-2x(aria-hidden="true")
-
     include nav
     include icons
 

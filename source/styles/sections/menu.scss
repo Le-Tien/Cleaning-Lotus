@@ -5,6 +5,7 @@
   text-align: center;
   margin: 10px 0 0 10px;
   opacity: 0.6;
+  height: auto;
 }
 
 .aside__menu>div{
@@ -24,12 +25,13 @@ h3.first{
   color: black;
   font-size: 1.3rem;
 }
+
 h3.first:hover{
   color:white;
   background-color: #505050;
 }
 p.second{
-  color:white;
+  color:black;
   padding:10px 0;
   font-size: 1.25rem;
 }

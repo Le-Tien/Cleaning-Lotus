@@ -48,8 +48,12 @@ gulp.task('styles:complete', function () {
              'bower_components/iCheck/icheck.min.js',
              'bower_components/social-likes/dist/social-likes.min.js',
              'source/js/aside_menu.js',
+             'source/js/slider.js',
              'source/js/form.js',
-             'source/js/main.js'
+             'source/js/main.js',
+             'source/js/emptyRef.js',
+             'source/js/carusel.js',
+             'source/js/scrolling.js'
      ])
      .pipe(sourcemaps.init())
      .pipe(concat('main.min.js'))

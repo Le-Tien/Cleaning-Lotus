@@ -1,7 +1,15 @@
 nav.nav
-  -var items =['Главная','О компании','Наши услуги','Прайс-лист']
+  -var items =['Главная','Наши преймущества','О компании','Акции','Наши услуги','Наши работы']
   each item in items
     if item === 'Главная'
-      a.nav__link.nav__link--active(href='#')= item
-    else
-      a.nav__link(href='#')=item
+      a.nav__link.nav__link--active(href='#runMain')= item
+    if item === 'Наши преймущества'
+      a.nav__link(href='#runBest')=item
+    if item === 'О компании'
+      a.nav__link(href='#runAbout')=item
+    if item === 'Акции'
+      a.nav__link(href='#runActions')=item
+    if item === 'Наши услуги'
+      a.nav__link(href='#runOurService')=item
+    if item === 'Наши работы'
+      a.nav__link(href='#runOurWorks')=item

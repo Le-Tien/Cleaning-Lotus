@@ -1,0 +1,30 @@
+.icon{
+  margin: auto auto 23px auto;
+}
+.icon-calc{
+  @include sprite($calc);
+}
+.icon-chemical{
+  @include sprite($chemical);
+}
+.icon-logo{
+  @include  sprite($logo);
+}
+.icon-personal{
+  @include sprite($personal);
+}
+.icon-sale{
+  @include sprite($sale);
+}
+.icon-specialist{
+  @include sprite($specialist);
+}
+.icon-time{
+  @include sprite($time);
+}
+.icon-spec{
+  @include sprite($spec);
+}
+.icoUpper{
+  @include sprite($up);
+}
